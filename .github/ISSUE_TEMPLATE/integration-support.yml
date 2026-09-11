@@ -1,0 +1,39 @@
+name: Integration / support question
+description: Ask about integrating a workload with Seedbed or report an integration blocker.
+title: "support: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Seedbed is in very early development. Bugs, missing capabilities, and breaking design changes are expected. Serious design-change requests are welcome.
+        Do not include secrets, credentials, confidential source code, or private repository access details.
+  - type: input
+    id: version
+    attributes:
+      label: Seedbed version / release identity
+      description: If no public release exists yet, say "pre-release".
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to accomplish?
+      description: Describe the workload and desired integration using generic names if the workload is private.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or blocker
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Important constraints
+      description: Include performance, persistence, security, isolation, timing, deployment, or other requirements that materially affect the design.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Relevant logs / errors / references
+      description: Redact secrets and customer-sensitive data.
