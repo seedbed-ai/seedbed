@@ -1,0 +1,39 @@
+name: Design / architecture request
+description: Propose a material change because the current Seedbed model does not fit a serious workload.
+title: "design: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Seedbed is intentionally open to substantial design changes at this stage. Concrete workload evidence is particularly valuable.
+        Do not include secrets, confidential source code, or unnecessary private customer identifiers.
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Workload scenario
+      description: Describe the concrete scenario and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: current-model
+    attributes:
+      label: What about the current model is insufficient?
+    validations:
+      required: true
+  - type: textarea
+    id: desired
+    attributes:
+      label: Desired behavior / design
+      description: Describe the capability or architectural change you need. A proposed implementation is optional.
+    validations:
+      required: true
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences if not addressed
+      description: Explain whether this blocks the integration, creates unacceptable risk, or merely adds inconvenience.
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Non-negotiable constraints
+      description: Include correctness, persistence, isolation, performance, timing, portability, or lifecycle constraints.
