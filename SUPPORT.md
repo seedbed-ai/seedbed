@@ -42,6 +42,8 @@ Do not post:
 
 For a private workload, use generic names and describe only the technical contract necessary to understand the issue.
 
+Potential vulnerabilities that require private disclosure should follow [`SECURITY.md`](SECURITY.md), not a normal public support issue.
+
 ## Support workflow
 
 1. Search existing issues and public documentation.
@@ -52,4 +54,4 @@ For a private workload, use generic names and describe only the technical contra
 6. Seedbed support triages the issue under [`TRIAGE.md`](TRIAGE.md) and may answer directly, link an existing capability, identify a known limitation, request bounded evidence, or promote the report into engineering/product work.
 7. Customer-readiness blockers remain open until the public support/release boundary actually resolves them; internal implementation alone is not sufficient.
 
-GitHub Issues are currently the authoritative public support channel for the automated Seedbed support workflow. Discussions may be used for broader community conversation, but automated support cannot currently guarantee direct participation there.
+GitHub Issues are currently Seedbed's authoritative public support and design-feedback channel. Other community surfaces may be added later when they have an explicit purpose and a support/moderation path; until then, users should not need to guess which public channel Seedbed is actually watching.
