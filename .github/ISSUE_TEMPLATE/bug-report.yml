@@ -1,0 +1,38 @@
+name: Bug report
+description: Report incorrect or unsafe Seedbed behavior.
+title: "bug: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Seedbed is in very early development. Please report failures and rough edges; they are expected and useful.
+        Do not include secrets, credentials, confidential source code, or unpatched exploit details.
+  - type: input
+    id: version
+    attributes:
+      label: Seedbed version / release identity
+      description: If no public release exists yet, say "pre-release".
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Use a minimal generic example when possible.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs / status / errors
+      description: Redact secrets and customer-sensitive data.
