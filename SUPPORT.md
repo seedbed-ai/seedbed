@@ -2,6 +2,8 @@
 
 Seedbed is in very early development. The purpose of public support right now is not only to help integrations succeed, but also to discover where the platform's design is wrong, incomplete, or too rigid.
 
+Public issues are handled under the durable triage process in [`TRIAGE.md`](TRIAGE.md).
+
 ## What to report
 
 Please open an issue for:
@@ -47,6 +49,7 @@ For a private workload, use generic names and describe only the technical contra
 3. Include the Seedbed release/version or artifact identity when one exists.
 4. Describe expected behavior, actual behavior, and why the distinction matters.
 5. For design requests, include the concrete workload scenario and constraints.
-6. Seedbed support may answer directly, link an existing capability, identify a known limitation, or promote the report into engineering/product work.
+6. Seedbed support triages the issue under [`TRIAGE.md`](TRIAGE.md) and may answer directly, link an existing capability, identify a known limitation, request bounded evidence, or promote the report into engineering/product work.
+7. Customer-readiness blockers remain open until the public support/release boundary actually resolves them; internal implementation alone is not sufficient.
 
 GitHub Issues are currently the authoritative public support channel for the automated Seedbed support workflow. Discussions may be used for broader community conversation, but automated support cannot currently guarantee direct participation there.
