@@ -14,7 +14,7 @@ Triage is not merely issue cleanup. Customer evidence may change Seedbed.
 
 Triage occurs in three layers:
 
-1. **Recurring intake triage** — review new and materially updated public issues multiple times during an active day.
+1. **Recurring intake triage** — review new and materially updated public issues **hourly** through the active Seedbed organization orchestrator.
 2. **Event-driven triage** — review immediately when a customer reports a serious blocker, security/isolation concern, data-loss risk, architectural mismatch, release/installation failure, or when a release/integration milestone is actively being exercised.
 3. **Backlog reconciliation** — periodically review all open public issues for stale answers, superseded assumptions, unresolved ownership, promised follow-up, and changes in implementation/release status.
 
@@ -123,6 +123,12 @@ During a backlog pass:
 - identify issues that should block or shape the next public release;
 - update stale pre-release statements after a release is published;
 - close only under the closure rules above.
+
+## Orchestration integration
+
+Recurring public triage is part of the organization-wide distributed triage subsystem defined in `seedbed-ai/company/governance/distributed-issue-triage.md`. The public repository retains authority over customer-facing triage semantics in this file; the Company orchestrator is the recurring execution surface, not the semantic owner.
+
+The hourly pass is delta-first. Full-backlog reconciliation is bounded/incremental during ordinary cycles and mandatory at release/major integration boundaries. A separate recurring support scheduler is not required while the organization orchestrator provides healthy hourly coverage.
 
 ## Current automation boundary
 
